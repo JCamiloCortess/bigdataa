@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "app_function": "lambda_descarga.a",
+        "aws_region": "us-east-1",
+        "project_name": "environment",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-ulggppmdp"
+        "apigateway_enabled": false,
+        "manage_roles": false,
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "events": [
+            {
+                "function": "lambda_descarga.py",
+                "expression": "cron(10 3 ? * THU *)"  
+            }
+        ] 
+    }
+}
