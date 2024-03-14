@@ -12,7 +12,7 @@
         "events": [
             {
                 "function": "lambda_descarga.py",
-                "expression": "cron(10 3 ? * THU *)"  
+                "expression": "cron(25 4 ? * THU *)"  
             }
         ] 
     }
