@@ -9,7 +9,7 @@ from urllib.parse import urljoin
 s3 = boto3.client('s3')
 
 def a(event, context):
-    base_url = "https://casas.mitula.com.co/searchRE/nivel2-Bogotá/nivel1-Cundinamarca/q-Bogotá"
+    base_url = "https://casas.mitula.com.co/casas/bogota"
     bucket_name = "eltarrito"
     folder_name = "casas"
     
